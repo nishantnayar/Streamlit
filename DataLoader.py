@@ -52,6 +52,7 @@ if len(files) == len(data_1):
 else:
     logger.error("Number of records dont match")
 
+
 # data_2 will contain an additional column
 # CleanedText wil contain the cleaned RawText data
 
@@ -79,7 +80,6 @@ if len(data_1) == len(data_2):
     logger.info("Number of records in data_1 and data_2 match")
 else:
     logger.error("Number of records in data_1 and data_2 dont match")
-
 
 # Close the logger at the end
 shutdown()

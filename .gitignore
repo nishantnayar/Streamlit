@@ -5,3 +5,4 @@
 __pycache__/DataLoader.cpython-38.pyc
 *.pyc
 *.log
+config/.env
