@@ -43,7 +43,7 @@ def shutdown():
 ########################
 # Cleanup logs
 ########################
-def cleanup_logs(folder_path="logs", max_files=1):
+def cleanup_logs(folder_path="logs", max_files=3):
     """
     Clears old log files in a directory, keeping only the most recent ones.
 
@@ -53,7 +53,7 @@ def cleanup_logs(folder_path="logs", max_files=1):
     """
 
     log_files = os.listdir(folder_path)
-    log_files.sort(key=lambda f: os.path.getmtime(os.path.join(folder_path, f)))
+    log_files.sort(key=lambda f: os.path.getmtime(os.path.join(folder_path, f)), reverse=True)
 
     files_to_delete = log_files[max_files:]
 

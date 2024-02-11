@@ -10,7 +10,7 @@ Created for LLM testing
 """
 
 import subprocess
-from utils import logger, header
+from utils import header
 
 header("Starting the process")
 
