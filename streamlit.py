@@ -20,14 +20,15 @@ local_css("config/CustomStyle.css")
 
 # options menu
 with st.sidebar:
-    selected = option_menu("Main Menu", ['Home', 'LLM', 'About'],
-                           icons=['house', 'app', 'info-circle'],
+    selected = option_menu("Main Menu", ['Home', 'LLM', 'Tweets', 'About'],
+                           icons=['house', '1-square', '2-square', 'info-circle'],
                            menu_icon="list", default_index=1)
 
 # Home Page
 if selected == "Home":
     st.write("home is where the heart is")
 
+# LLM Page
 if selected == 'LLM':
     tab1, tab2 = st.tabs(["RAG", "Others"])
 
@@ -38,6 +39,12 @@ if selected == 'LLM':
     with tab2:
         st.title('Others')
         st.write("Work in Progress")
+
+# Disaster Tweets
+
+if selected == 'Tweets':
+    st.title('Disaster Tweets')
+    st.write("Work in Progress")
 
 # About Page
 if selected == 'About':

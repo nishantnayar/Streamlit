@@ -43,9 +43,7 @@ print(f"Contents loaded")
 # Add contents into a dataframe
 data = pd.DataFrame([file_contents]).transpose().rename(columns={0: 'RawText'})
 
-
 logger.info(f"Number of records loaded {len(data)}")
-
 
 if len(files) == len(data):
     logger.info("Number of records match")
