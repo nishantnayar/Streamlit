@@ -6,8 +6,9 @@ streamlit_autorefresh==1.0.1
 streamlit-option-menu==0.4.0
 
 # Pinned transitive dependencies - security patches
-gitpython==3.1.60        # fixes PYSEC-2026-3984, CVE-2026-114145 (20+ CVEs)
+gitpython==3.2.1         # fixes PYSEC-2026-3984, CVE-2026-114145 (20+ CVEs)
 requests==2.33.0         # fixes PYSEC-2026-1872, PYSEC-2026-2275
 certifi==2026.10.19      # fixes PYSEC-2026-4320
 starlette==1.3.1         # fixes PYSEC-2026-161, PYSEC-2026-2281, PYSEC-2026-249 (8 CVEs)
 python-multipart==0.0.31 # fixes PYSEC-2026-3040 (6 CVEs)
+anyio==4.14.2            # fixes PYSEC-2026-4024, PYSEC-2026-4025 (2 CVEs)
