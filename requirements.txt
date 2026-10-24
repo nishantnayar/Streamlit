@@ -6,7 +6,7 @@ streamlit_autorefresh==1.0.1
 streamlit-option-menu==0.4.0
 
 # Pinned transitive dependencies - security patches
-gitpython==3.1.62        # fixes path traversal via .gitmodules path field (3.1.62 has fix; 3.2.x branch does not)
+gitpython==3.2.1         # most secure: 3.2.0 was built on 3.1.62 (includes path fix); 3.2.1 adds further submodule/symlink fixes
 requests==2.33.0         # fixes PYSEC-2026-1872, PYSEC-2026-2275
 certifi==2026.10.19      # fixes PYSEC-2026-4320
 starlette==1.3.1         # fixes PYSEC-2026-161, PYSEC-2026-2281, PYSEC-2026-249 (8 CVEs)
